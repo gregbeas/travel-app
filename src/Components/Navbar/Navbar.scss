@@ -1,0 +1,11 @@
+.nav-item {
+  color: (--varBlack);
+
+  &:hover {
+    color: var(--colorGreen);
+  }
+
+  &:active {
+    color: var(--colorGreen);
+  }
+}
