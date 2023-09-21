@@ -1,0 +1,131 @@
+#destinations {
+  svg path {
+    stroke: var(--colorGreen);
+  }
+
+  .searchField {
+    font-size: var(--normalFontSize);
+    width: 100%;
+
+    .inputField {
+      background: var(--colorGreenInputBg);
+      padding: 1rem;
+      border-radius: 1.5rem;
+      width: 100%;
+    }
+
+    button {
+      height: 56.516px;
+      border-radius: 1.5rem;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      background: var(--colorGreen);
+      &:hover {
+        background: var(--colorGreenAccentLight);
+      }
+      &:active {
+        background: var(--colorGreenAccentLight);
+      }
+    }
+
+    input {
+      background: transparent;
+      border:none;
+      outline: none;
+    }
+  }
+
+  #destinations-container {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    .destination-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+      height: 260px;
+
+      .destination-img{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    &:hover {
+      img {
+        transition: 0.4s ease-in-out;
+        scale: 1.1;
+      }
+    }
+    }
+  .destination-info {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    padding: 1rem 2rem 1rem;
+    width: 100%;
+    justify-content: space-between;
+    color: var(--colorWhite);
+
+    &::after  {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0),
+      rgba(0,0,0,1)
+    );
+    z-index: -1;
+  }
+
+  svg path {
+    stroke: var(--colorWhite);
+  }
+
+  .info-name {
+    font-size: var(--h1FontSize);
+  }
+
+  .info-location {
+    font-weight: 600;
+    font-size: var(--normalFontSize);
+  }
+
+  .rating {
+    padding: 8px 1rem;
+    font-size: var(--normalFontSize);
+    border-radius: 1rem;
+    background: rgba(245, 245, 245, 0.25);
+    font-weight: 600;
+  }
+  }
+  }
+
+  @media only screen and (min-width: 640px) {
+    .grid {
+      grid-template-columns: auto auto;
+    }
+  }
+
+
+  @media only screen and (min-width: 1100px) {
+    .grid {
+      grid-template-columns: auto auto auto auto;
+    }
+
+    #destinations-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

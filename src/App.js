@@ -7,22 +7,24 @@ import Middle from './Components/Middle/Middle';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Questions from './Components/Questions/Questions';
 import Reviews from './Components/Reviews/Reviews';
-import Subscribe from './Components/Subscribe/Subscribe';
 
 
 function App() {
   return (
-    <div>
+    <>
+    <header>
       <Navbar/>
+    </header>
+    <main>
       <Home/>
       <Middle/>
       <Destinations/>
       <Portfolio/>
       <Reviews/>
       <Questions/>
-      <Subscribe/>
+    </main>
       <Footer/>
-    </div>
+    </>
   );
 }
 

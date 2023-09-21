@@ -1,0 +1,56 @@
+#home {
+  margin-top: 4.5rem;
+  width: 100%;
+}
+
+.section-text {
+  height: 75vh;
+  // Photo by Asad Photo Maldives: https://www.pexels.com/photo/aerial-view-of-a-beautiful-island-resort-3601425/
+  background-image: url("../../Assets/maldives.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.3rem;
+
+  h1 {
+    padding: 1rem 1rem;
+    margin-top: 15vh;
+    font-size: var(--biggestFontSize);
+    font-weight: 900;
+    color: var(--colorGreen);
+  }
+  p {
+    padding: 1rem 1rem;
+    font-size: var(--normalfontSize);
+    font-weight: 500;
+    margin-top: 20px;
+  }
+
+  h1, p {
+    text-align: center;
+    background: rgba(255,255,255, 0.8);
+    border-radius: 1rem;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  
+    &:hover {
+      background: var(--colorGreenAccentLight)
+    }
+
+    &:active {
+      background: var(--colorGreenAccentLight)
+    }
+  }
+  
+}
+
+#popular-destinations {
+  display: none;
+}

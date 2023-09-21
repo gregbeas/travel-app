@@ -8,6 +8,7 @@
   --colorGreen: #006241;
   --colorGreenAccentLight: #00754a;
   --colorGreenAccentDark: #1e3932;
+  --colorGreenInputBg: #D9DDDD;
   --navBoxShadow: 0 1px 3px rgba(0,0,0,.1),
                   0 2px 2px rgba(0,0,0,.06),
                   0 0 2px rgba(0,0,0,.07);
@@ -29,6 +30,7 @@
   padding: 0;
   margin: 0;
   font-family: "Monserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -52,7 +54,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 // End Resets
 
-// Begin Utility Classes 
+// Begin Utility Classes
 .flex {
   display: flex;
   align-items: center;
@@ -64,6 +66,25 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 1.5rem;
 }
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.green-text {
+  color: var(--colorGreen);
+  font-size: var(--normalFontSize);
+  font-style:italic;
+  font-weight: 600;
+  text-align: center;
+}
+
 // End Utility Classes
 
 // Begin Default Styling
@@ -77,10 +98,6 @@ a {
 
 li {
   list-style: none;
-}
-
-.icon {
-  cursor: pointer;
 }
 
 .btn {
@@ -104,7 +121,7 @@ li {
 }
 
 .secTitle {
-  display: none;
+  // display: none;
   text-align: center;
   padding: 1rem 0;
   font-size: 25px;
@@ -122,10 +139,15 @@ li {
 
 .secHeading {
   padding-bottom: 1.5rem;
+  text-align: center;
 }
 
 .btn .icon {
   margin-left: 0.5rem;
+}
+
+.scroll-padding {
+  scroll-margin-top: 4.5rem;
 }
 
 .section {
@@ -154,3 +176,36 @@ li {
 }
 
 // End Default Styling
+
+.secContainer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 700px) {
+  .secContainer {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1300px) {
+  .secContainer {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1600px) {
+  .secContainer {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1601px) {
+  .secContainer {
+    width: 65%;
+  }
+}
+
+
+
+
