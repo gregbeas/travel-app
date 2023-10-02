@@ -16,7 +16,7 @@ const Portfolio = () => {
     <div className="secContainer grid">
       <div className="leftContent">
         <div className="grid singles-container">
-          <div className="single-portfolio">
+          <div className="single-portfolio" data-aos="fade-up">
             <div className="icon-div">
             <img src={medicalIcon} alt="map icon" className="portfolio-icon"/>
             </div>
@@ -25,7 +25,7 @@ const Portfolio = () => {
               <p>The safety and wellbeing of out customers is our top priority. We maintain high safety standards and have emergency support available during your entire trip.</p>
             </div>
           </div>
-          <div className="single-portfolio">
+          <div className="single-portfolio" data-aos="fade-up">
             <div className="icon-div">
               <img src={mapIcon} alt="map icon" className="portfolio-icon"/>
             </div>
@@ -34,7 +34,7 @@ const Portfolio = () => {
               <p>Domestic or international, we cater to a wide range of travelers with a large database of destinations to fit every adventurer's interests.</p>
             </div>
           </div>
-          <div className="single-portfolio">
+          <div className="single-portfolio" data-aos="fade-up">
             <div className="icon-div">
             <img src={supportIcon} alt="map icon" className="portfolio-icon"/>
             </div>

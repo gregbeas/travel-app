@@ -14,7 +14,7 @@ const Reviews = () => {
         <h3>What Our Travelers Say About Us</h3>
     </div>
     <div className="secContainer grid">
-      <div className="review-card">
+      <div className="review-card" data-aos="fade-up">
         <p className="customer-name">John, 42</p>
         <div className="review-text">
           <p>
@@ -32,7 +32,7 @@ const Reviews = () => {
           <BsStarFill  className="icon"size={25} color={"#006241"}/>
         </span>
       </div>
-      <div className="review-card">
+      <div className="review-card" data-aos="fade-up">
         <p className="customer-name">Audrey, 56</p>
         <div className="review-text">
           <p>
@@ -52,7 +52,7 @@ const Reviews = () => {
           <BsStar  className="icon"size={25} color={"#006241"}/>
         </span>
       </div>
-      <div className="review-card">
+      <div className="review-card" data-aos="fade-up">
         <p className="customer-name">Tess, 47</p>
         <div className="review-text">
           <p>
@@ -71,7 +71,7 @@ const Reviews = () => {
           <BsStarHalf  className="icon"size={25} color={"#006241"}/>
         </span>
       </div>
-      <div className="review-card">
+      <div className="review-card" data-aos="fade-up">
         <p className="customer-name">Gerry, 58</p>
         <div className="review-text">
           <p>
@@ -81,7 +81,7 @@ const Reviews = () => {
           The planning, advice, handholding, communications and enthusiasm from everyone we have met 
           from the company has been exemplary and they should all be congratulated for building us 
           some memories we will never forget and for making my 'dad at the airport' duties very 
-          simple and stress free. 
+          simple and stress free.
           </p>
         </div>
         <span className="stars flex">
@@ -92,7 +92,7 @@ const Reviews = () => {
           <BsStarFill  className="icon"size={25} color={"#006241"}/>
         </span>
       </div>
-      <div className="review-card">
+      <div className="review-card" data-aos="fade-up">
         <p className="customer-name">Kristine, 40</p>
         <div className="review-text">
           <p>
@@ -110,7 +110,7 @@ const Reviews = () => {
           <BsStarHalf  className="icon"size={25} color={"#006241"}/>
         </span>
       </div>
-      <div className="review-card">
+      <div className="review-card" data-aos="fade-up">
       <p className="customer-name">Denis, 48</p>
         <div className="review-text">
           <p>
@@ -128,7 +128,6 @@ const Reviews = () => {
           <BsStarFill  className="icon"size={25} color={"#006241"}/>
         </span>
       </div>
-      
     </div>
   </section>;
 }

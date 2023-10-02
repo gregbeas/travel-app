@@ -77,6 +77,7 @@ const destinations = [
 ]
 
 const Destinations = () => {
+
   return <section id="destinations" className="section scroll-padding container">
     <div className="secContainer">
       <div className="secTitle">
@@ -101,7 +102,7 @@ const Destinations = () => {
       <div id="destinations-container">
         {destinations.map((destination) => {
           return (
-            <div className="destination-card" key={destination.id}>
+            <div className="destination-card" key={destination.id} data-aos="fade-up">
                       <div className="destination-img">
                         <img src={destination.img} alt={destination.name}/>
                       </div>

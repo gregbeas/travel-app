@@ -1,9 +1,11 @@
 import React from "react";
 import "./Middle.scss";
 
+
 const Middle = () => {
+
   return <section id="middle">
-    <div className="secContainer container">
+    <div className="secContainer container" data-aos="fade-right">
       <div className="flex">
         <span className="flex middle-span">
           <h2>2K+</h2>

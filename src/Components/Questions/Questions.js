@@ -16,7 +16,7 @@ const Questions = () => {
       <p className="green-text">FREQUENTLY ASKED QUESTIONS</p>
     </div>
     <div className="secContainer">
-      <div className="accordion">
+      <div className="accordion" data-aos="fade-up">
         <Accordion
           title="How do I choose a travel destination?"
           answer="Different factors such as budget and desired experiences can affect destination decisions. Research vacation destinations that align with your personal preferences, or send us an inquiry your desired experiences and we can help find a destination for you with budget in mind!"
@@ -72,8 +72,9 @@ const Questions = () => {
             })
           }}
         >
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name" data-aos="fade-up">Name</label>
           <input
+              data-aos="fade-up"
               type="text"
               placeholder="John Smith"
               id="name"
@@ -84,9 +85,10 @@ const Questions = () => {
               }
               required
             ></input>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email" data-aos="fade-up">Email</label>
           <input
             type="email"
+            data-aos="fade-up"
             id="email"
             placeholder="example@email.com"
             className="input"
@@ -96,9 +98,10 @@ const Questions = () => {
             }
             required
           ></input>
-          <label htmlFor="subject">Subject</label>
+          <label htmlFor="subject" data-aos="fade-up">Subject</label>
           <input
             type="text"
+            data-aos="fade-up"
             placeholder="I have a question..."
             id="subject"
             className="input"
@@ -110,6 +113,7 @@ const Questions = () => {
           ></input>
           <textarea
             placeholder="Ask away!"
+            data-aos="fade-up"
             aria-label="inquiry body"
             rows="6"
             className="input"
@@ -119,7 +123,7 @@ const Questions = () => {
             }
             required
           ></textarea>
-          <button value="submit" className="btn">Submit Inquiry</button>
+          <button value="submit" className="btn"data-aos="fade-up">Submit Inquiry</button>
         </form>
       </div>
     </div>
